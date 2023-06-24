@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive To-Do List</title>
+    <!--Add css file-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>To-Do List</h1>
+        <p id="date"></p>
+      </header>
+      <section>
+        <input
+          type="text"
+          name="filter"
+          id="filter"
+          placeholder="Filter"
+          oninput="filterItem()"
+        />
+        <hr style="width: 450px; color: gray" />
+
+        <div class="add">
+          <input type="text" id="addInput" placeholder="Add a task" required />
+          <button type="button" id="addButton">Add</button>
+        </div>
+        <div id="listDiv">
+          <ul id="ulList"></ul>
+        </div>
+      </section>
+    </main>
+
+    <!--Add js file-->
+    <script src="script.js"></script>
+  </body>
+</html>
